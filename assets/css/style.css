@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* NavBar Starts */
+#home{
+    height: 100vh;
+}
+.navbar-brand span{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-item a{
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
+}
+.nav-item a:hover{
+    color: black;
+    border-bottom: 2px solid red;
+}
+.dot{
+    position: relative;
+    left: 22%;
+    top: 14px;
+    display: inline-block;
+    z-index: -1;
+    animation: animateDot 10s ease-in-out infinite;
+}
+@keyframes animateDot{
+    0%,100%
+    {
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(30px);
+    }
+}
+#text{
+    color: rgb(255, 54, 88);
+}
+p{
+    color: #6c757d;
+}
+.rounded-circle{
+    margin-left:50%;
+}
+
+.tw h1{
+    font-weight: 700;
+}
+.links{
+    margin-top: 30%;
+}
+/* Right Side */
+#back{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    animation: animateColor 8s ease-in-out infinite;
+}
+@keyframes animateColor{
+    0%,100%
+    {
+        transform: translateY(-20px);
+    }
+    50%
+    {
+        transform: translateY(30px);
+    }
+}
+.mm{
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    z-index: -1;
+    animation: animateMe 8s ease-in-out infinite;
+}
+@keyframes animateMe{
+    0%,100%
+    {
+        transform: translateX(0px);
+    }
+    50%
+    {
+        transform: translateX(-50px);
+    }
+}
+@media screen and (max-width:993px) {
+    .links{
+        margin-top: 10%;
+    }
+    .rounded-circle{
+        margin-left:6%;
+    }
+    #back{
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+    .mm{
+        position: absolute;
+        right: 0;
+        top: 0%;
+        z-index: -1;
+    }
+}
+@media screen and (max-width:425px) {
+    #back{
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+    @keyframes animateColor{
+        0%,100%
+        {
+            transform: translateY(0px);
+        }
+        50%
+        {
+            transform: translateY(0px);
+        }
+    }
+    .mm{
+        position: absolute;
+        left: 10px;
+        top: -30px;
+        z-index: -1;
+    }
+    @keyframes animateMe{
+        0%,100%
+        {
+            transform: translateX(0px);
+        }
+        50%
+        {
+            transform: translateX(0px);
+        }
+    }
+}
+
+/* Rights Side Ends */
+/* NavBar Ends */
+
+/* About Starts */
+.about1{
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background: url(splash.jpg),url(me.jpg);
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: screen;
+    animation: animateAbout 10s ease-in-out infinite;
+}
+.title{
+    border-left: thick solid red;
+}
+@keyframes animateAbout{
+    0%,100%
+    {
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateX(10px);
+    }
+    50%
+    {
+        transform: translateY(20px);
+    }
+    70%{
+        transform: translateX(-10px);
+    }
+}
+/* About Ends */
+
+
+/* Skills Starts */
+.progress{
+    height: 30px !important;
+    box-shadow: 2px 4px 5px gray, -2px -2px 5px white;
+}
+.progress:hover{
+    box-shadow: 2px 4px 5px white, -2px -2px 5px gray;
+}
+.label1 label{
+    color: black;
+    font-weight: 600;
+}
+.dot1{
+    position: relative;
+    left: 22%;
+    top: 8px;
+    display: inline;
+    z-index: 10;
+    animation: animateDot1 10s ease-in-out infinite;
+}
+@keyframes animateDot1{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#skills{
+    position: relative;
+}
+#planet{
+    position: absolute;
+    z-index: -1;
+    top:-10%;
+    right:10% ;
+    opacity: 0.7;
+    animation: animatePlanet 10s linear infinite;
+}
+@keyframes animatePlanet{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+@media screen and (max-width:768px) {
+    .dot1{
+        opacity: 0;
+    }
+}
+@media screen and (max-width:845px) {
+    /* #planet{
+        position: absolute;
+        z-index: -1;
+        top:-15%;
+        right: -37%;
+        animation: animatePlanet 10s linear infinite;
+    } */
+}
+
+/* Skills Ends */
+
+
+/* Contact Us Starts */
+.contact-info{
+    background-color: #343a40;
+    padding: 20px;
+}
+.ig{
+    position: relative;
+}
+.form-control{
+    padding: 10px;
+    outline: none;
+    border-bottom:2px solid #6e6e6e !important;
+    transition: all 0.3s;
+    border-radius: 10px !important;
+}
+.placeholder{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 14px;
+    padding: 0px 5px;
+    color: #666;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+/* .form-control:hover{
+    box-shadow: 2px 4px 5px gray, -2px -2px 5px rgb(219, 219, 219);
+} */
+.form-control:focus + .placeholder{
+    top: -10px;
+    color: #343a40;
+    background-color: #fff;
+}
+.form-control:focus {
+    border-color:#575656 !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+input{
+    background-color: transparent !important;
+}
+textarea{
+    background-color: transparent !important;
+}
+/* Chrome and Safari */
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+/* FireFox */
+input[type="number"]{
+    -ms-progress-appearance:textfield;
+}
