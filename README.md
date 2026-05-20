@@ -65,7 +65,7 @@ npm run build
 
 ## 🔗 Live Demo
 
-Add your deployed portfolio link here.
+https://portfolio-puce-alpha-62.vercel.app/
 
 ## 👨‍💻 About Me
 
