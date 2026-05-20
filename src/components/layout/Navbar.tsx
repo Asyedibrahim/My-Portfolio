@@ -48,12 +48,15 @@ export default function Navbar() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className={`fixed top-0 left-0 right-0 z-50 ${scrolled ? 'glass shadow-lg shadow-purple-900/10' : 'bg-transparent'}`}
+        className={`fixed top-0 left-0 right-0 z-50 ${scrolled ? 'shadow-lg shadow-purple-900/10' : ''}`}
         style={{
           padding: 0,
+          background: scrolled ? 'rgba(13, 13, 24, 0.6)' : 'transparent',
+          backdropFilter: scrolled ? 'blur(20px)' : 'none',
+          WebkitBackdropFilter: scrolled ? 'blur(20px)' : 'none',
           borderBottom: '1px solid',
           borderBottomColor: scrolled ? 'rgba(124, 58, 237, 0.15)' : 'transparent',
-          transition: 'background 0.5s ease, box-shadow 0.5s ease, border-bottom-color 0.5s ease, backdrop-filter 0.5s ease',
+          transition: 'background 0.5s ease, box-shadow 0.5s ease, border-bottom-color 0.5s ease, backdrop-filter 0.5s ease, -webkit-backdrop-filter 0.5s ease',
         }}
       >
         <div className="container-custom flex items-center justify-between h-16 md:h-20">
@@ -139,8 +142,14 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed inset-y-0 right-0 z-40 w-72 glass border-l border-purple-500/20 md:hidden"
-            style={{ paddingTop: '5rem' }}
+            className="fixed inset-y-0 right-0 z-40 w-72 border-l border-purple-500/20 md:hidden"
+            style={{
+              paddingTop: '5rem',
+              background: 'rgba(13, 13, 24, 0.6)',
+              backdropFilter: 'blur(20px)',
+              WebkitBackdropFilter: 'blur(20px)',
+              border: '1px solid rgba(124, 58, 237, 0.15)',
+            }}
           >
             <div className="flex flex-col gap-2 p-6">
               {navLinks.map((link, i) => {
