@@ -97,9 +97,9 @@ export default function Hero() {
               className="font-bold tracking-tight"
               style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', lineHeight: 1.05 }}
             >
-              <span style={{ color: '#f8fafc' }}>Syed</span>
-              <br />
-              <span className="gradient-text glow-text-purple">Ibrahim</span>
+              <span style={{ color: '#f8fafc' }}>SYED </span>
+              {/* <br /> */}
+              <span className="gradient-text glow-text-purple">IBRAHIM</span>
             </h1>
           </motion.div>
 

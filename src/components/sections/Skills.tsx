@@ -6,13 +6,13 @@ import {
   SiRedux, 
   SiTailwindcss, 
   // SiBootstrap, 
-  SiFramer,
+  // SiFramer,
   SiNodedotjs, 
   SiExpress, 
   SiMongodb, 
   SiMysql, 
   SiRedis, 
-  SiGit, 
+  // SiGit, 
   SiGithub,
   // SiPostman, 
   // SiCloudinary, 
@@ -21,11 +21,11 @@ import {
 } from 'react-icons/si';
 import { 
   Globe, 
-  ShieldCheck, 
+  // ShieldCheck, 
   // Layers3, 
   // Repeat2, 
   Server, 
-  Package 
+  // Package 
 } from 'lucide-react';
 import type { IconType } from 'react-icons';
 import type { LucideIcon } from 'lucide-react';
@@ -46,7 +46,7 @@ const skills: Skill[] = [
   { name: 'Redux',          icon: SiRedux as AnyIcon,        color: '#764ABC', category: 'Frontend' },
   { name: 'Tailwind CSS',   icon: SiTailwindcss as AnyIcon,  color: '#06B6D4', category: 'Frontend' },
   // { name: 'Bootstrap',      icon: SiBootstrap as AnyIcon,    color: '#7952B3', category: 'Frontend' },
-  { name: 'Framer Motion',  icon: SiFramer as AnyIcon,       color: '#FF0055', category: 'Frontend' },
+  // { name: 'Framer Motion',  icon: SiFramer as AnyIcon,       color: '#FF0055', category: 'Frontend' },
   // { name: 'Flowbite',       icon: Layers3 as AnyIcon,        color: '#1D4ED8', category: 'Frontend' },
 
   // Backend
@@ -59,7 +59,7 @@ const skills: Skill[] = [
   { name: 'Redis',          icon: SiRedis as AnyIcon,        color: '#DC382D', category: 'Database' },
 
   // Tools
-  { name: 'Git',            icon: SiGit as AnyIcon,          color: '#F05032', category: 'Tools' },
+  // { name: 'Git',            icon: SiGit as AnyIcon,          color: '#F05032', category: 'Tools' },
   { name: 'GitHub',         icon: SiGithub as AnyIcon,       color: '#E8E8E8', category: 'Tools' },
   // { name: 'Postman',        icon: SiPostman as AnyIcon,      color: '#FF6C37', category: 'Tools' },
   // { name: 'Cloudinary',     icon: SiCloudinary as AnyIcon,   color: '#3448C5', category: 'Tools' },
@@ -69,10 +69,10 @@ const skills: Skill[] = [
 
   // Concepts
   { name: 'REST APIs',         icon: Globe as AnyIcon,       color: '#7C3AED', category: 'Concepts' },
-  { name: 'JWT Auth',          icon: ShieldCheck as AnyIcon, color: '#06B6D4', category: 'Concepts' },
+  // { name: 'JWT Auth',          icon: ShieldCheck as AnyIcon, color: '#06B6D4', category: 'Concepts' },
   // { name: 'MVC Architecture',  icon: Layers3 as AnyIcon,     color: '#A855F7', category: 'Concepts' },
   // { name: 'Agile',             icon: Repeat2 as AnyIcon,     color: '#22D3EE', category: 'Concepts' },
-  { name: 'Deployment',        icon: Package as AnyIcon,     color: '#34D399', category: 'Concepts' },
+  // { name: 'Deployment',        icon: Package as AnyIcon,     color: '#34D399', category: 'Concepts' },
 ];
 
 const categoryColors: Record<string, string> = {

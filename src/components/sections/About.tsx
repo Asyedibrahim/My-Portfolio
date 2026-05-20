@@ -89,7 +89,7 @@ function ProfilePhoto() {
         >
           <img
             src={me}
-            alt="Syed Ibrahim – Full Stack Developer"
+            alt="Syed Ibrahim - Full Stack Developer"
             style={{
               width: '100%',
               height: '100%',
