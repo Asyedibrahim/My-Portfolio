@@ -5,6 +5,7 @@ import type { IconType } from 'react-icons';
 import type { LucideIcon } from 'lucide-react';
 import AnimatedText from '../ui/AnimatedText';
 import ParticleBackground from '../ui/ParticleBackground';
+import myResume from '../../assets/SYED IBRAHIM A.pdf';
 
 type AnyIcon = IconType | LucideIcon;
 
@@ -149,7 +150,7 @@ export default function Hero() {
             </motion.a>
 
             <motion.a
-              href="/resume.pdf"
+              href={myResume}
               download
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.97 }}

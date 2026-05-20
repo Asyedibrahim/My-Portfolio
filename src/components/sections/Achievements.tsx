@@ -14,7 +14,7 @@ const stats = [
   },
   {
     icon: Code2,
-    value: 6,
+    value: 10,
     suffix: '+',
     label: 'Projects Delivered',
     description: 'From ERP to e-commerce platforms',

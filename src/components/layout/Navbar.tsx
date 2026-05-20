@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import myResume from '../../assets/SYED IBRAHIM A.pdf';
 
 const navLinks = [
   { href: '#hero', label: 'Home' },
@@ -109,7 +110,7 @@ export default function Navbar() {
           {/* CTA + Mobile */}
           <div className="flex items-center gap-3">
             <motion.a
-              href="/resume.pdf"
+              href={myResume}
               download
               whileHover={{ scale: 1.05, y: -1 }}
               whileTap={{ scale: 0.97 }}

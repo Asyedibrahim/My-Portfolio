@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../ui/SectionTitle';
-import { Mail, MapPin, Send, CheckCircle } from 'lucide-react';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { Mail, MapPin, CheckCircle } from 'lucide-react';
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import type { IconType } from 'react-icons';
 import type { LucideIcon } from 'lucide-react';
 
@@ -12,28 +12,28 @@ const contactLinks: { icon: AnyIcon; label: string; value: string; href: string;
   {
     icon: Mail as AnyIcon,
     label: 'Email',
-    value: 'syedibrahim@email.com',
-    href: 'mailto:syedibrahim@email.com',
+    value: 'syedibrahim7252@gmail.com',
+    href: 'mailto:syedibrahim7252@gmail.com',
     color: '#7c3aed',
   },
   {
     icon: FaLinkedinIn as AnyIcon,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/syed-ibrahim',
-    href: 'https://linkedin.com',
+    value: 'linkedin.com/in/syed-ibrahim-a-541876261',
+    href: 'https://www.linkedin.com/in/syed-ibrahim-a-541876261/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     color: '#06b6d4',
   },
   {
     icon: FaGithub as AnyIcon,
     label: 'GitHub',
-    value: 'github.com/syed-ibrahim',
-    href: 'https://github.com',
+    value: 'github.com/Asyedibrahim',
+    href: 'https://github.com/Asyedibrahim',
     color: '#a855f7',
   },
   {
     icon: MapPin as AnyIcon,
     label: 'Location',
-    value: 'Tamil Nadu, India',
+    value: 'Tiruchirappalli, Tamil Nadu, India',
     href: '#',
     color: '#22d3ee',
   },
@@ -58,8 +58,24 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const phoneNumber = "919360331850"; // without + and spaces
+
+    const text = `Hello Syed,%0A%0A
+      Name: ${form.name}%0A
+      Email: ${form.email}%0A
+      Subject: ${form.subject}%0A
+      Message: ${form.message}%0A%0A
+      Looking forward to your reply!`;
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
+
+    window.open(whatsappURL, "_blank");
+
+    // optional UI feedback
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 4000);
+
     setForm({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -129,7 +145,7 @@ export default function Contact() {
                     }}
                   >
                     <div
-                      className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                      className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
                       style={{
                         background: `${link.color}12`,
                         border: `1px solid ${link.color}25`,
@@ -158,7 +174,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <div className="glass rounded-2xl p-8 gradient-border">
+            <div className="glass rounded-2xl p-8 gradient-border" style={{ position: 'relative', zIndex: 10 }}>
               {submitted ? (
                 <motion.div
                   initial={{ scale: 0.8, opacity: 0 }}
@@ -277,8 +293,8 @@ export default function Contact() {
                     className="btn-primary flex items-center justify-center gap-2 w-full"
                     style={{ padding: '0.9rem' }}
                   >
-                    <Send size={16} />
-                    <span>Send Message</span>
+                    <FaWhatsapp size={16} />
+                    <span>Send via WhatsApp</span>
                   </motion.button>
                 </form>
               )}

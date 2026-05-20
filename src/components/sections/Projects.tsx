@@ -2,16 +2,23 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SectionTitle from '../ui/SectionTitle';
 import { projects } from '../../data/projects';
-import { ExternalLink, Layers } from 'lucide-react';
-import { FaGithub } from 'react-icons/fa';
+import { 
+  // ExternalLink, 
+  Layers 
+} from 'lucide-react';
+// import { FaGithub } from 'react-icons/fa';
+import Billing from '../../assets/billing.png';
+import ERP from '../../assets/erp.png';
+import VisaScout from '../../assets/visascout.png';
+import Ecom from '../../assets/ecom.png';
 
 const categories = ['All', 'Enterprise', 'E-Commerce', 'SaaS', 'Business', 'CRM'];
 
 const projectImages: Record<number, string> = {
-  1: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
-  2: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80',
-  3: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80',
-  4: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80',
+  1: ERP,
+  2: Ecom,
+  3: VisaScout,
+  4: Billing,
   5: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80',
   6: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
 };
@@ -76,12 +83,12 @@ export default function Projects() {
             transition={{ duration: 0.3 }}
             className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
           >
-            {filtered.map((project, i) => (
+            {filtered.map((project) => (
               <motion.div
                 key={project.id}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                transition={{ duration: 0.2, delay: 0.1 }}
                 whileHover={{ y: -8, scale: 1.01 }}
                 className="glass rounded-2xl overflow-hidden flex flex-col"
                 style={{
@@ -111,7 +118,7 @@ export default function Projects() {
                       width: '100%',
                       height: '100%',
                       objectFit: 'cover',
-                      filter: 'brightness(0.25) saturate(0.8)',
+                      filter: 'brightness(0.50) saturate(0.8)',
                     }}
                     loading="lazy"
                   />
@@ -185,7 +192,7 @@ export default function Projects() {
                   </div>
 
                   {/* Actions */}
-                  <div className="flex items-center gap-3 mt-auto pt-2">
+                  {/* <div className="flex items-center gap-3 mt-auto pt-2">
                     <motion.a
                       href={project.github}
                       target="_blank"
@@ -220,7 +227,8 @@ export default function Projects() {
                       <ExternalLink size={14} />
                       Live Demo
                     </motion.a>
-                  </div>
+                  </div> */}
+
                 </div>
               </motion.div>
             ))}

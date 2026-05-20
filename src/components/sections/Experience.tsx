@@ -159,7 +159,7 @@ export default function Experience() {
                           className="flex items-start gap-3"
                         >
                           <div
-                            className="flex-shrink-0 w-5 h-5 rounded-md flex items-center justify-center text-xs font-bold mt-0.5"
+                            className="shrink-0 w-5 h-5 rounded-md flex items-center justify-center text-xs font-bold mt-0.5"
                             style={{
                               background: `${exp.color}18`,
                               border: `1px solid ${exp.color}30`,

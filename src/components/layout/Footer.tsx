@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion';
-import { ArrowUp, Heart, Mail } from 'lucide-react';
+import { 
+  ArrowUp, 
+  // Heart, 
+  Mail 
+} from 'lucide-react';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import type { IconType } from 'react-icons';
 import type { LucideIcon } from 'lucide-react';
@@ -7,9 +11,9 @@ import type { LucideIcon } from 'lucide-react';
 type AnyIcon = IconType | LucideIcon;
 
 const socials: { icon: AnyIcon; href: string; label: string }[] = [
-  { icon: FaGithub as AnyIcon, href: 'https://github.com', label: 'GitHub' },
-  { icon: FaLinkedinIn as AnyIcon, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: Mail as AnyIcon, href: 'mailto:syedibrahim@email.com', label: 'Email' },
+  { icon: FaGithub as AnyIcon, href: 'https://github.com/Asyedibrahim', label: 'GitHub' },
+  { icon: FaLinkedinIn as AnyIcon, href: 'https://www.linkedin.com/in/syed-ibrahim-a-541876261/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', label: 'LinkedIn' },
+  { icon: Mail as AnyIcon, href: 'mailto:syedibrahim7252@gmail.com', label: 'Email' },
 ];
 
 export default function Footer() {
@@ -38,7 +42,7 @@ export default function Footer() {
       />
 
       <div className="container-custom py-12">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 py-2">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start gap-2">
             <div className="flex items-center gap-2">
@@ -78,14 +82,14 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="flex flex-col items-center md:items-end gap-1">
-            <p style={{ color: '#475569', fontSize: '0.8rem' }}>
+            {/* <p style={{ color: '#475569', fontSize: '0.8rem' }}>
               Crafted with{' '}
               <Heart
                 size={12}
                 style={{ display: 'inline', color: '#a855f7', fill: '#a855f7' }}
               />{' '}
               by Syed Ibrahim
-            </p>
+            </p> */}
             <p style={{ color: '#334155', fontSize: '0.75rem' }}>
               © {new Date().getFullYear()} All rights reserved.
             </p>

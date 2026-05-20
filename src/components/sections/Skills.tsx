@@ -1,11 +1,32 @@
 import { motion } from 'framer-motion';
 import SectionTitle from '../ui/SectionTitle';
 import {
-  SiReact, SiTypescript, SiRedux, SiTailwindcss, SiBootstrap, SiFramer,
-  SiNodedotjs, SiExpress, SiMongodb, SiMysql, SiRedis, SiGit, SiGithub,
-  SiPostman, SiCloudinary, SiNetlify, SiRender,
+  SiReact, 
+  SiTypescript, 
+  SiRedux, 
+  SiTailwindcss, 
+  // SiBootstrap, 
+  SiFramer,
+  SiNodedotjs, 
+  SiExpress, 
+  SiMongodb, 
+  SiMysql, 
+  SiRedis, 
+  SiGit, 
+  SiGithub,
+  // SiPostman, 
+  // SiCloudinary, 
+  // SiNetlify, 
+  // SiRender,
 } from 'react-icons/si';
-import { Globe, ShieldCheck, Layers3, Repeat2, Server, Package } from 'lucide-react';
+import { 
+  Globe, 
+  ShieldCheck, 
+  // Layers3, 
+  // Repeat2, 
+  Server, 
+  Package 
+} from 'lucide-react';
 import type { IconType } from 'react-icons';
 import type { LucideIcon } from 'lucide-react';
 
@@ -24,9 +45,9 @@ const skills: Skill[] = [
   { name: 'TypeScript',     icon: SiTypescript as AnyIcon,   color: '#3178C6', category: 'Frontend' },
   { name: 'Redux',          icon: SiRedux as AnyIcon,        color: '#764ABC', category: 'Frontend' },
   { name: 'Tailwind CSS',   icon: SiTailwindcss as AnyIcon,  color: '#06B6D4', category: 'Frontend' },
-  { name: 'Bootstrap',      icon: SiBootstrap as AnyIcon,    color: '#7952B3', category: 'Frontend' },
+  // { name: 'Bootstrap',      icon: SiBootstrap as AnyIcon,    color: '#7952B3', category: 'Frontend' },
   { name: 'Framer Motion',  icon: SiFramer as AnyIcon,       color: '#FF0055', category: 'Frontend' },
-  { name: 'Flowbite',       icon: Layers3 as AnyIcon,        color: '#1D4ED8', category: 'Frontend' },
+  // { name: 'Flowbite',       icon: Layers3 as AnyIcon,        color: '#1D4ED8', category: 'Frontend' },
 
   // Backend
   { name: 'Node.js',        icon: SiNodedotjs as AnyIcon,    color: '#339933', category: 'Backend' },
@@ -40,17 +61,17 @@ const skills: Skill[] = [
   // Tools
   { name: 'Git',            icon: SiGit as AnyIcon,          color: '#F05032', category: 'Tools' },
   { name: 'GitHub',         icon: SiGithub as AnyIcon,       color: '#E8E8E8', category: 'Tools' },
-  { name: 'Postman',        icon: SiPostman as AnyIcon,      color: '#FF6C37', category: 'Tools' },
-  { name: 'Cloudinary',     icon: SiCloudinary as AnyIcon,   color: '#3448C5', category: 'Tools' },
-  { name: 'Netlify',        icon: SiNetlify as AnyIcon,      color: '#00C7B7', category: 'Tools' },
-  { name: 'Render',         icon: SiRender as AnyIcon,       color: '#46E3B7', category: 'Tools' },
+  // { name: 'Postman',        icon: SiPostman as AnyIcon,      color: '#FF6C37', category: 'Tools' },
+  // { name: 'Cloudinary',     icon: SiCloudinary as AnyIcon,   color: '#3448C5', category: 'Tools' },
+  // { name: 'Netlify',        icon: SiNetlify as AnyIcon,      color: '#00C7B7', category: 'Tools' },
+  // { name: 'Render',         icon: SiRender as AnyIcon,       color: '#46E3B7', category: 'Tools' },
   { name: 'VPS Hosting',    icon: Server as AnyIcon,         color: '#FF6B6B', category: 'Tools' },
 
   // Concepts
   { name: 'REST APIs',         icon: Globe as AnyIcon,       color: '#7C3AED', category: 'Concepts' },
   { name: 'JWT Auth',          icon: ShieldCheck as AnyIcon, color: '#06B6D4', category: 'Concepts' },
-  { name: 'MVC Architecture',  icon: Layers3 as AnyIcon,     color: '#A855F7', category: 'Concepts' },
-  { name: 'Agile',             icon: Repeat2 as AnyIcon,     color: '#22D3EE', category: 'Concepts' },
+  // { name: 'MVC Architecture',  icon: Layers3 as AnyIcon,     color: '#A855F7', category: 'Concepts' },
+  // { name: 'Agile',             icon: Repeat2 as AnyIcon,     color: '#22D3EE', category: 'Concepts' },
   { name: 'Deployment',        icon: Package as AnyIcon,     color: '#34D399', category: 'Concepts' },
 ];
 
@@ -80,7 +101,7 @@ export default function Skills() {
         />
 
         {/* Flat icon grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 max-w-5xl mx-auto">
           {skills.map((skill, i) => {
             const Icon = skill.icon;
             return (

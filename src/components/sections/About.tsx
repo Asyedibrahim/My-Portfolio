@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import SectionTitle from '../ui/SectionTitle';
 import { Code2, Globe, Layers, Rocket, MapPin, Download } from 'lucide-react';
 import me from '../../assets/me.png';
+import myResume from '../../assets/SYED IBRAHIM A.pdf';
 
 const highlights = [
   {
@@ -271,7 +272,7 @@ export default function About() {
             <div className="grid grid-cols-3 gap-4">
               {[
                 { value: '1.4+', label: 'Years Exp.' },
-                { value: '6+', label: 'Projects' },
+                { value: '10+', label: 'Projects' },
                 { value: '100%', label: 'Dedication' },
               ].map((stat) => (
                 <motion.div
@@ -294,7 +295,7 @@ export default function About() {
 
             {/* Download resume CTA */}
             <motion.a
-              href="/resume.pdf"
+              href={myResume}
               download
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
