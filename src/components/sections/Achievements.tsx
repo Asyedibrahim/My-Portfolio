@@ -6,9 +6,9 @@ import { Trophy, Code2, Users, Rocket } from 'lucide-react';
 const stats = [
   {
     icon: Trophy,
-    value: 16,
+    value: 2,
     suffix: '+',
-    label: 'Months Experience',
+    label: 'Years Experience',
     description: 'Full-time and freelance combined',
     color: '#7c3aed',
   },
