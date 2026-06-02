@@ -65,7 +65,7 @@ npm run build
 
 ## 🔗 Live Demo
 
-https://portfolio-puce-alpha-62.vercel.app/
+https://syedibrahim25.vercel.app/
 
 ## 👨‍💻 About Me
 
