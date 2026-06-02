@@ -73,6 +73,6 @@ I'm a Full Stack MERN Developer passionate about building scalable web applicati
 
 ## 📫 Contact
 
-* GitHub: Add your GitHub profile
-* LinkedIn: Add your LinkedIn profile
-* Email: Add your email
+* GitHub: https://github.com/Asyedibrahim
+* LinkedIn: https://www.linkedin.com/in/syed-ibrahim-a-541876261/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+* Email: syedibrahim7252@gmail.com
