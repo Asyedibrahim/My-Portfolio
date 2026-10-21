@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import myResume from '../../assets/SYED IBRAHIM A.pdf';
+import myResume from '../../assets/Syed_Ibrahim_Full_Stack_Developer_Resume.pdf';
 
 const navLinks = [
   { href: '#hero', label: 'Home' },

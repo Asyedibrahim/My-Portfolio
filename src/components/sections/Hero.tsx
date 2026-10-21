@@ -5,7 +5,7 @@ import type { IconType } from 'react-icons';
 import type { LucideIcon } from 'lucide-react';
 import AnimatedText from '../ui/AnimatedText';
 import ParticleBackground from '../ui/ParticleBackground';
-import myResume from '../../assets/SYED IBRAHIM A.pdf';
+import myResume from '../../assets/Syed_Ibrahim_Full_Stack_Developer_Resume.pdf';
 
 type AnyIcon = IconType | LucideIcon;
 
@@ -15,7 +15,7 @@ const socials: { icon: AnyIcon; href: string; label: string }[] = [
   { icon: Mail as AnyIcon, href: 'mailto:syedibrahim7252@gmail.com', label: 'Email' },
 ];
 
-const techPills = ['React.js', 'TypeScript', 'Node.js', 'MongoDB', 'Express.js'];
+const techPills = ['React.js', 'React Native', 'TypeScript', 'Node.js', 'MongoDB', 'Express.js'];
 
 export default function Hero() {
   return (
@@ -122,10 +122,8 @@ export default function Hero() {
             className="max-w-2xl"
             style={{ color: '#64748b', fontSize: '1.05rem', lineHeight: 1.8 }}
           >
-            Building{' '}
-            <span style={{ color: '#a855f7' }}>scalable web applications</span> with clean
-            architecture, optimized APIs, and stunning user experiences. Passionate about
-            transforming complex problems into elegant digital solutions.
+            Full-Stack Developer with{' '} <span style={{ color: '#a855f7' }}>2 years of experience</span> building web applications, REST APIs, and database-driven solutions. 
+            Skilled in React.js, React Native, TypeScript, Node.js, Express.js, MongoDB, and MySQL, with a focus on clean code, scalable architecture, and reliable application performance.
           </motion.p>
 
           {/* CTA Buttons */}

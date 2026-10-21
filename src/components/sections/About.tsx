@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import SectionTitle from '../ui/SectionTitle';
 import { Code2, Globe, Layers, Rocket, MapPin, Download } from 'lucide-react';
 import me from '../../assets/me.png';
-import myResume from '../../assets/SYED IBRAHIM A.pdf';
+import myResume from '../../assets/Syed_Ibrahim_Full_Stack_Developer_Resume.pdf';
 
 const highlights = [
   {
@@ -228,7 +228,7 @@ export default function About() {
                       color: '#a855f7',
                     }}
                   >
-                    1 Year 4 Months Experience
+                    2 Years Experience
                   </div>
                   <div
                     className="px-3 py-1 rounded-full text-xs font-semibold"
@@ -271,7 +271,7 @@ export default function About() {
             {/* Stats row */}
             <div className="grid grid-cols-3 gap-4">
               {[
-                { value: '1.4+', label: 'Years Exp.' },
+                { value: '2+', label: 'Years Exp.' },
                 { value: '10+', label: 'Projects' },
                 { value: '100%', label: 'Dedication' },
               ].map((stat) => (

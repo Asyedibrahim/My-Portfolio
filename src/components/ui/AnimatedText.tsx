@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 
 const ROLES = [
-  'Full Stack Developer',
+  'Full-Stack Developer',
   'MERN Stack Developer',
-  'React Specialist',
-  'TypeScript',
-  'REST Api',
+  'React Native Developer',
+  'Backend Developer',
+  'REST API Developer',
 ];
 
 export default function AnimatedText() {
